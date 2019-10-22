@@ -1,0 +1,138 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "questionId",
+				"type": "string"
+			}
+		],
+		"name": "getMemo",
+		"outputs": [
+			{
+				"name": "memo",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "voter",
+				"type": "address"
+			},
+			{
+				"name": "questionId",
+				"type": "string"
+			},
+			{
+				"name": "toProposal",
+				"type": "uint8"
+			}
+		],
+		"name": "vote",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "questionId",
+				"type": "string"
+			}
+		],
+		"name": "getResult",
+		"outputs": [
+			{
+				"name": "winningProposal",
+				"type": "uint8"
+			},
+			{
+				"name": "voteCount",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "questionId",
+				"type": "string"
+			}
+		],
+		"name": "getTotalVotes",
+		"outputs": [
+			{
+				"name": "voteCount",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "questionId",
+				"type": "string"
+			}
+		],
+		"name": "winningProposal",
+		"outputs": [
+			{
+				"name": "_winningProposal",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	}
+]
